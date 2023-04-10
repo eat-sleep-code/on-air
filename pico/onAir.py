@@ -1,7 +1,7 @@
 import time
 import machine
 import network
-import ssd1306
+import ssd1351
 import ujson
 import urequests
 
@@ -30,8 +30,8 @@ with open("config.json") as localConfig:
     
     
 # Set up the OLED screen
-i2c = machine.I2C(0, sda=machine.Pin(0), scl=machine.Pin(1), freq=400000)
-oled = ssd1306.SSD1306_I2C(128, 32, i2c)
+spi = machine.SPI(1, baudrate=8000000, polarity=0, phase=0)
+oled = ssd1351.SSD1351(spi, dc=machine.Pin(8), cs=machine.Pin(9), rst=machine.Pin(10))
 
 # Set up the buttons
 button1 = machine.Pin(2, machine.Pin.IN, machine.Pin.PULL_UP)
@@ -65,7 +65,7 @@ while True:
             remote02Data = item['data']
 
     # Display the data on the OLED screen
-    oled.fill(0)
+    oled.fill(ssd1351.color565(0, 0, 0))
     oled.text(localName + ':', 0, 0)
     oled.text(localData, 0, 10, colors[localData])
     oled.text(remote01Name + ':', 0, 20)
