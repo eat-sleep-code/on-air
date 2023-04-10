@@ -1,0 +1,4 @@
+{
+	"get": "https://example.com/data",
+	"post": "https://example.com/data"
+}
