@@ -28,4 +28,5 @@ upip.install("micropython-adafruit-ssd1351")
 ```
 
 ### Connect the OLED screen to your Raspberry Pi Pico W
-Connect your OLED screen to your Raspberry Pi Pico W using the I2C protocol. Make sure the OLED screen is properly connected to the Pico W's pins.
+Connect your OLED screen to your Raspberry Pi Pico W.
+Make sure the OLED screen is properly connected to the Pico W's pins.
