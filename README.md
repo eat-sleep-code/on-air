@@ -2,14 +2,16 @@
 
 > This is a work-in-progress. 
 
-Allow a family to easily share their availability status across 2-3 Pico W's so there are no unwanted interruptions during remote work / video conferences.
+Allow a family to easily share their availability / status across two to three Pico W's.   This helps reduce unwanted interruptions during remote work / video conferences.
 
 ---
 
 ## Prerequisites
 
 ### Hardware
-- Pico W
+You will need at least two of _each_ of the following.   (If you want to have more than 3 endpoints you will need to make slight modifications to the code in **onAir.py**)
+
+- Raspberry Pi Pico W
 - [Adafruit OLED Display](https://www.adafruit.com/product/1431)
 
 ### Install the required libraries
