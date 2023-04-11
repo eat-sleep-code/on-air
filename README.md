@@ -11,8 +11,9 @@ Allow a family to easily share their availability / status across two to three P
 ### Hardware
 You will need at least two of _each_ of the following.   (If you want to have more than 3 endpoints you will need to make slight modifications to the code in **onAir.py**)
 
-- Raspberry Pi Pico W
+- Raspberry Pi Pico W or Pico WH
 - [Adafruit OLED Display](https://www.adafruit.com/product/1431)
+- [4x Switches](https://www.adafruit.com/product/1332)
 
 ### Install the required libraries
 We will need the following libraries to interact with the OLED screen and connect to the datasource:
